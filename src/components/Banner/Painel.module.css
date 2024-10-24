@@ -1,0 +1,42 @@
+@font-face {
+    font-family: 'Mulish-Black';
+    src: url('Mulish-Black.ttf') format('truetype');
+}
+.frase{
+    color: rgba(252, 252, 252, 0.11);
+    font-family: 'Mulish-Black';
+    font-size: 48px;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+.fraseBranca{
+    color: #fcfcfc;
+    font-family: 'Mulish-Black';
+    font-size: 51px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.painel{
+    margin-top: 90px;
+}
+.linhas{
+    position: absolute;
+    top: -50px;
+    left: 567px;
+}
+.nomeLogo{
+    color: #ffffff;
+    font-family: 'Mulish-Black';
+    font-size: 35px;
+}
+.logoDiv{
+    display: flex;
+    gap: 10px;
+    margin-left: 210px;
+    margin-top: -30px;
+    align-items: center;
+}
+.logoDiv>img{
+    width: 60px;
+    height: 60px;
+}
