@@ -1,22 +1,31 @@
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'; // Importa o React Router
 import './App.css'; 
 import Header from './components/Header/Header';
 import Menu from './components/Menu/Menu';
 import Banner from './components/Banner/Banner';
+import NovoCurriculo from './components/NovoCurriculo/NovoCurriculo'; // Importa o componente NovoCurriculo
 
 function App() {
   return (
-    <div className="App"> {/* Certifique-se de que a classe está configurada corretamente */}
-      <Header />
-      <div className="main_flex">
-        <Menu />
-        <Banner />
+    <Router>
+      <div className="App">
+        <Header />
+        <div className="main_flex">
+          <Menu />
+          <Routes>
+            <Route path="/" element={<Banner />} /> 
+            <Route path="/novo-curriculo" element={<NovoCurriculo />} /> 
+          </Routes>
+        </div>
+
+        {/* <div className='curriculosDiv'>
+          <p className="curriculosTitulo">Currículos Recentes</p>
+          <p className="curriculosTitulo">Currículos Antigos</p>
+        </div> */}
+
       </div>
-      {/* Adicione margem superior aos títulos */}
-      <div className='curriculosDiv'>
-        <p className="curriculosTitulo">Currículos Recentes</p>
-        <p className="curriculosTitulo">Currículos Antigos</p>
-      </div>
-    </div>
+    </Router>
   );
 }
 
