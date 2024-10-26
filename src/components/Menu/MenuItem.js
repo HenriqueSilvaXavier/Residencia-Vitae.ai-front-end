@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import styles from './MenuItem.module.css';
-import MenuExpand from '../Menu/arrow_Kopie_3-2.svg';
-import CurriculoList from '../Menu/tab_controlls2.svg'
+import MenuExpand from '../../imagens/menu-expand.svg'
+import CurriculoList from '../../imagens/curriculo-list.svg'
 import { Link } from 'react-router-dom';
 
 const SubMenu = () => {
