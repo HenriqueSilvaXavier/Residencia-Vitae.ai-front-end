@@ -5,6 +5,7 @@ import Header from './components/Header/Header';
 import Menu from './components/Menu/Menu';
 import Banner from './components/Banner/Banner';
 import NovoCurriculo from './components/NovoCurriculo/NovoCurriculo'; // Importa o componente NovoCurriculo
+import DetalheCurriculo from './components/DetalheCurriculo/DetalheCurriculo';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Banner />} /> 
             <Route path="/novo-curriculo" element={<NovoCurriculo />} /> 
+            <Route path="/detalhe-curriculo/:id" element={<DetalheCurriculo />} /> 
           </Routes>
         </div>
 
