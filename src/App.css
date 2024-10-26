@@ -41,6 +41,9 @@ body{
 }
 .main_flex{
   display: flex;
+  width: 100vw;   /* Largura total da viewport (tela) */
+  height: 100vh;  /* Altura total da viewport (tela) */
+
 }
 .curriculosTitulo {
   margin-left: 250px; /* Margem para afastar os títulos do banner */

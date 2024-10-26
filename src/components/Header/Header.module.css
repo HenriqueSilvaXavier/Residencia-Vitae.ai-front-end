@@ -2,7 +2,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between; /* Distribui logo e nav */
-    margin-top: 10px;
+    margin-top: 20px;
     padding: 0 20px; /* Padding lateral */
     gap: 23%; /* Ajusta o gap para mover um pouco à esquerda */
     border-bottom: 1px solid #242424;

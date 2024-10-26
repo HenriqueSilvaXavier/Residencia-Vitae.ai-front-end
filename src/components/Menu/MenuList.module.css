@@ -3,5 +3,9 @@
   padding: 0;
   margin: 20px 0;
   display: block;
-  width: 162px;
+
+  a{
+    text-decoration: none;
+  }
 }
+
