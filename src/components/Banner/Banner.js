@@ -8,7 +8,7 @@ const Banner = () => {
     <div className={styles.bannerDiv}>
         <div className={styles.bannerContainer}>
             <h1 className={styles.bannerTitulo}>Tela Inicial</h1>
-            <p className={styles.bannerDescricao}>Uma visão geral de acordo com o seu prefil</p>
+            <p className={styles.bannerDescricao}>Uma visão geral de acordo com o seu perfil</p>
             <Novo_curriculo/>
         </div>
         <Painel/>
