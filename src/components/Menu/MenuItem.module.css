@@ -1,0 +1,96 @@
+@font-face {
+  font-family: 'Mulish-SemiBold';
+  src: url('Mulish-SemiBold.ttf') format('truetype');
+}
+
+.menuItem {
+  display: flex;
+  align-items: center;
+  color: white;
+  padding: 10px 7px;
+  cursor: pointer;
+  transition: background 0.3s;
+  width: 100%;
+}
+
+.mainSubMenu {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 8px;
+  display: flex;
+  /* Alinha os elementos filhos em linha (horizontalmente) */
+  align-items: center;
+  /* Centraliza verticalmente os itens */
+
+  /* Se você quiser um espaçamento entre a imagem e a lista, pode adicionar: */
+  .mainSubMenuCurriculoList,
+  .mainSubMenuList {
+    margin-right: 20px;
+    /* Espaçamento entre a imagem e a lista */
+
+  }
+
+  .mainSubMenuList a {
+    text-decoration: none;
+    /* Remove o sublinhado */
+    color: #A1A1A1;
+    /* Define a cor do texto */
+  }
+
+  .mainSubMenuList a:hover {
+    color: #ccc;
+    /* Altera a cor ao passar o mouse (opcional) */
+  }
+
+  .mainSubMenuCurriculoList {
+    margin-top: 5px;
+    margin-right: 0px;
+  }
+
+  ul {
+    margin-left: 20px;
+    /* Espaço à esquerda da lista, se necessário */
+    display: flex;
+    /* Mantém a lista como um flex container */
+    flex-direction: column;
+    /* Mantém a direção vertical dos itens da lista */
+    list-style-type: none;
+    /* Remove as bolinhas */
+
+    li {
+      padding: 4px 0;
+      color: #A1A1A1;
+      /* Define a cor do texto */
+      font-family: 'Mulish-SemiBold';
+    }
+  }
+}
+
+
+
+.active {
+  background-color: #7a3afc;
+  border-radius: 8px;
+}
+
+.label {
+  margin-left: 10px;
+  justify-content: flex-start;
+}
+
+.dropdownIcon {
+  margin-left: auto;
+}
+
+.menuItem:hover {
+  background-color: #2a2a3b;
+  border-radius: 8px;
+}
+
+.notificationBadge {
+  background: linear-gradient(to right, #A100FF, #610099); /* Degradê da esquerda para a direita */
+  color: white;
+  padding: 2px 8px;
+  border-radius: 7px;
+  margin-left: 10px;
+}

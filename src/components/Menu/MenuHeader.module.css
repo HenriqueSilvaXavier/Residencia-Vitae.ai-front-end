@@ -1,0 +1,32 @@
+.menuHeader {
+    color: white;
+    font-size: 14px;
+    width: 160px;
+  }
+  
+  .searchBar {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    background-color: black;
+    padding: 5px 10px;
+    border-radius: 8px;
+    border: 1px solid #2B2B2B;
+    width: 141px;
+  }
+  
+  .searchInput {
+    background-color: transparent;
+    border: none;
+    color: white;
+    outline: none;
+    width: 100%;
+  }
+  
+  .searchIcon {
+    color: #7e7e8e;
+  }
+  .menuTitulo{
+    text-align: left;
+    width: 50px;
+  }
