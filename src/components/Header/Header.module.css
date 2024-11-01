@@ -1,0 +1,24 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Distribui logo e nav */
+    margin-top: 20px;
+    padding: 0 20px; /* Padding lateral */
+    gap: 23%; /* Ajusta o gap para mover um pouco à esquerda */
+    border-bottom: 1px solid #242424;
+}
+
+@media (max-width: 768px) { /* Para telas médias */
+    .header {
+        justify-content: space-between; /* Mantém a separação */
+        gap: 15%; /* Um pequeno ajuste no gap */
+    }
+}
+
+@media (max-width: 480px) { /* Para telas pequenas */
+    .header {
+        flex-direction: column; /* Empilha logo e nav verticalmente */
+        align-items: flex-start; /* Alinha à esquerda */
+        gap: 15px;
+    }
+}
