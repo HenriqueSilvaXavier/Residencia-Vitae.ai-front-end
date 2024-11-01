@@ -41,8 +41,8 @@ body{
 }
 .main_flex{
   display: flex;
-  width: 100vw;   /* Largura total da viewport (tela) */
-  height: 100vh;  /* Altura total da viewport (tela) */
+  width: 100%;   /* Largura total da viewport (tela) */
+  height: 100%;  /* Altura total da viewport (tela) */
 
 }
 .curriculosTitulo {
