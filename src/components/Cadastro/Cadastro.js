@@ -19,10 +19,10 @@ function Cadastro() {
             <Input nome="email" tipo="email" placeholder="Endereço de e-mail"/>
           </div>
           <div className={styles.formGroup}>
-            <Input nome="telefone" tipo="tel" placeholder="Telefone"/>
+            <Input nome="password" tipo="password" placeholder="Senha"/>
           </div>
           <div className={styles.formGroup}>
-            <Input nome="endereco" tipo="text" placeholder="Endereço"/>
+            <Input nome="telefone" tipo="tel" placeholder="Telefone"/>
           </div>
           <a href="/" className={styles.cadastrar}>Já possui conta? Faça o Login</a>
           <button type="submit" className={styles.loginButton}>Entrar</button>
