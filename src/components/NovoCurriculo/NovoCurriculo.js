@@ -161,12 +161,36 @@ const NovoCurriculo = () => {
           <div className={styles.feedback} style={{ width: '48%' }}>
             {typeof feedback === "object" ? (
               <ul>
-                {Object.entries(feedback).map(([key, value]) => (
-                  <li key={key}>
-                    <strong>{key}:</strong> {typeof value === "object" ? JSON.stringify(value) : value}
-                  </li>
-                ))}
-              </ul>
+              {Object.entries(feedback).map(([key, value]) => {
+                if (key === "estrutura_valida") {
+                  return (
+                    <li key={key}>
+                      <strong>Estrutura válida:</strong> {value === false ? "false" : value}
+                    </li>
+
+                  );
+                } else if (key === "dicas_melhoria") {
+                  return (
+                    <li key={key}>
+                      <strong>Dicas de melhoria:</strong> {typeof value === "object" ? JSON.stringify(value) : value}
+                    </li>
+                  );
+                } else if (key === "habilidades_tecnicas") {
+                  return (
+                    <li key={key}>
+                      <strong>Habilidades técnicas:</strong> {typeof value === "object" ? JSON.stringify(value) : value}
+                    </li>
+                  );
+                } else if (key === "areas_experiencia") {
+                  return (
+                    <li key={key}>
+                      <strong>Áreas de experiência:</strong> {typeof value === "object" ? JSON.stringify(value) : value}
+                    </li>
+                  );
+                }
+                return null; // Caso a chave não corresponda a nenhuma das condições
+              })}
+            </ul>            
             ) : (
               <p>{feedback}</p>
             )}
